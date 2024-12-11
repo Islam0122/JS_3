@@ -2,6 +2,7 @@ import './App.css'
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Card from "./card.jsx";
+import Button from "./button.jsx";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
               <Card/>
               <Card/>
           </div>
+          <Button/>
           <hr/>
           <Footer/>
       </div>
