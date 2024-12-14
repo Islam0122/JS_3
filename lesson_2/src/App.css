@@ -1,0 +1,65 @@
+body {
+    display: block;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;    /* Центрирование по вертикали */
+    margin: 0;
+}
+.container {
+    width: 1400px;
+}
+h1{
+    color:white;
+    margin-top: 50px;
+}
+.movies_cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+.movie {
+    width: 250px; /* Ширина карточки */
+    background-color: #1a1a1a; /* Темный фон */
+    border-radius: 10px; /* Скругленные углы */
+    overflow: hidden; /* Убираем выступающий контент */
+    color: #fff; /* Белый текст */
+    margin: 10px auto; /* Центровка карточек */
+    font-family: Arial, sans-serif; /* Шрифт */
+    text-align: center; /* Центровка текста */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+
+    position: relative; /* Для абсолютного позиционирования рейтинга */
+
+    img {
+        width: 100%; /* Ширина изображения */
+        border-bottom: 2px solid #444; /* Линия разделения */
+        object-fit: cover; /* Изображение без искажений */
+    }
+    .movie-rating {
+        position: absolute; /* Абсолютное позиционирование */
+        top: 10px; /* Отступ сверху */
+        left: 10px; /* Отступ слева */
+        color: #fff; /* Белый текст */
+        font-size: 14px; /* Размер текста */
+        font-weight: bold; /* Жирный текст */
+        padding: 5px 10px; /* Внутренние отступы */
+        border-radius: 5px; /* Скругленные углы */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    }
+
+    .movie-info {
+        padding: 15px 10px; /* Отступы внутри блока */
+    }
+
+    .movie-title {
+        text-align: left;
+        font-size: 18px; /* Размер шрифта для названия */
+        font-weight: bold; /* Жирный текст */
+        margin: 10px 0 5px; /* Отступ сверху и снизу */
+    }
+
+    .movie-type {
+        text-align: left;
+        font-size: 14px; /* Размер шрифта */
+        margin-top: 5px; /* Отступ сверху */
+    }
+}
