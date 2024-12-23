@@ -1,0 +1,91 @@
+
+.user-card {
+    max-width: 450px; /* Увеличена ширина карточки */
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px; /* Увеличено внутреннее отступы */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-8px); /* Увеличен эффект при наведении */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.user-header {
+    margin-bottom: 20px; /* Увеличен отступ */
+}
+
+.user-avatar {
+    width: 140px; /* Увеличен размер фото */
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4caf50;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.user-avatar:hover {
+    transform: scale(1.15); /* Увеличен эффект при наведении на фото */
+}
+
+.user-info {
+    margin-bottom: 25px; /* Увеличен отступ */
+}
+
+.user-greeting {
+    font-size: 18px; /* Увеличен размер шрифта */
+    color: #777;
+    margin: 0;
+}
+
+.user-name {
+    font-size: 32px; /* Увеличен размер шрифта */
+    color: #333;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.user-details {
+    margin-bottom: 25px; /* Увеличен отступ */
+}
+
+.user-details p {
+    font-size: 16px; /* Увеличен размер текста */
+    color: #555;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Увеличен промежуток между кнопками */
+    margin-top: 25px;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    color: #bbb;
+    font-size: 28px; /* Увеличен размер иконок */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.action-button.active,
+.action-button:hover {
+    color: #4caf50;
+    transform: scale(1.25); /* Увеличен эффект при наведении */
+}
+
+.action-button i {
+    pointer-events: none;
+}
+
+.action-button:active {
+    transform: scale(1.1);
+    color: #2e7d32;
+}
