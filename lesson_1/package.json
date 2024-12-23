@@ -1,15 +1,18 @@
 {
   "name": "lesson_1",
+  "homepage": "https://Islam0122/github.io/JS_3",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

@@ -18,10 +18,7 @@ class AuthService {
             headers: {'Accept': 'application/json'},
         })
         return await response.json()
-
-
     }
-
 }
 
 export default new AuthService();
